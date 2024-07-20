@@ -1,0 +1,8 @@
+import cv2 
+ 
+path = r'C:\Users\Divyanshi Bhardwaj\Downloads\lena.jpg'
+image = cv2.imread(path) 
+
+bilateral = cv2.bilateralFilter(image, 15, 75, 75) 
+ 
+cv2.imwrite('taj_bilateral.jpg', bilateral) 
